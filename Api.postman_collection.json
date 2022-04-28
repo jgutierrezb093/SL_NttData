@@ -1,0 +1,1108 @@
+{
+	"info": {
+		"_postman_id": "99f16cad-500a-48e6-b139-142905fd1f0d",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Cliente",
+					"item": [
+						{
+							"name": "Jose Lema",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nombre\": \"Jose Lema\",\n  \"genero\": 1,\n  \"edad\": 20,\n  \"identificacion\": \"0940715253\",\n  \"direccion\": \"Otavalo sn y principal\",\n  \"telefono\": \"098254785\",\n  \"contrasena\": \"1234\",\n  \"estado\": true\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cliente",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nombre\": \"<string>\",\n  \"genero\": \"<integer>\",\n  \"edad\": \"<integer>\",\n  \"identificacion\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"telefono\": \"<string>\",\n  \"contrasena\": \"<string>\",\n  \"estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Marianela Montalvo",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nombre\": \"Marianela Montalvo\",\n  \"genero\": 2,\n  \"edad\": 25,\n  \"identificacion\": \"0913838157\",\n  \"direccion\": \"Amazonas y NNUU\",\n  \"telefono\": \"097548965\",\n  \"contrasena\": \"5678\",\n  \"estado\": true\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cliente",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nombre\": \"<string>\",\n  \"genero\": \"<integer>\",\n  \"edad\": \"<integer>\",\n  \"identificacion\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"telefono\": \"<string>\",\n  \"contrasena\": \"<string>\",\n  \"estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Juan Osorio",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nombre\": \"Juan Osorio\",\n  \"genero\": 1,\n  \"edad\": 30,\n  \"identificacion\": \"0951412832\",\n  \"direccion\": \"13 junio y Equinoccial\",\n  \"telefono\": \"098874587\",\n  \"contrasena\": \"1245\",\n  \"estado\": true\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cliente",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"nombre\": \"<string>\",\n  \"genero\": \"<integer>\",\n  \"edad\": \"<integer>\",\n  \"identificacion\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"telefono\": \"<string>\",\n  \"contrasena\": \"<string>\",\n  \"estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Clientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7093/api/Cliente",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cuenta",
+					"item": [
+						{
+							"name": "Cta. 478758",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"478758\",\n  \"tipoCuenta\": 1,\n  \"saldoInicial\": 2000,\n  \"estado\": true,\n  \"clienteId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": \"<integer>\",\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Cta. 225487",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"225487\",\n  \"tipoCuenta\": 2,\n  \"saldoInicial\": 100,\n  \"estado\": true,\n  \"clienteId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": \"<integer>\",\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Cta. 495878",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"495878\",\n  \"tipoCuenta\": 1,\n  \"saldoInicial\": 0,\n  \"estado\": true,\n  \"clienteId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": \"<integer>\",\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Cta. 496825",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"496825\",\n  \"tipoCuenta\": 1,\n  \"saldoInicial\": 540,\n  \"estado\": true,\n  \"clienteId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": \"<integer>\",\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Cta. 585545",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"numeroCuenta\": \"585545\",\n  \"tipoCuenta\": 2,\n  \"saldoInicial\": 1000,\n  \"estado\": true,\n  \"clienteId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"numeroCuenta\": \"<string>\",\n  \"tipoCuenta\": \"<integer>\",\n  \"saldoInicial\": \"<double>\",\n  \"estado\": \"<boolean>\",\n  \"clienteId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Cuenta",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7093/api/Cuenta",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Cuenta"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuenta",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuenta"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Movimientos",
+					"item": [
+						{
+							"name": "Mov. 478758",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fecha\": \"2022-04-28T10:00:00.000\",\n  \"tipoMovimiento\": 1,\n  \"valor\": -575,\n  \"cuentaId\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": \"<integer>\",\n  \"valor\": \"<double>\",\n  \"cuentaId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Mov. 225487",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fecha\": \"2022-04-28T10:00:00.000\",\n  \"tipoMovimiento\": 2,\n  \"valor\": 600,\n  \"cuentaId\": 2\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": \"<integer>\",\n  \"valor\": \"<double>\",\n  \"cuentaId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Mov. 495878",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fecha\": \"2022-04-28T10:00:00.000\",\n  \"tipoMovimiento\": 2,\n  \"valor\": 150,\n  \"cuentaId\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": \"<integer>\",\n  \"valor\": \"<double>\",\n  \"cuentaId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Mov. 496825",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fecha\": \"2022-04-28T10:00:00.000\",\n  \"tipoMovimiento\": 1,\n  \"valor\": -540,\n  \"cuentaId\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7093/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"fecha\": \"<dateTime>\",\n  \"tipoMovimiento\": \"<integer>\",\n  \"valor\": \"<double>\",\n  \"cuentaId\": \"<long>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7093/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7093",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/api/Reportes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7093/api/Reportes?fecha=2022-04-28",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7093",
+							"path": [
+								"api",
+								"Reportes"
+							],
+							"query": [
+								{
+									"key": "fecha",
+									"value": "2022-04-28"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Reportes?fecha=<dateTime>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Reportes"
+									],
+									"query": [
+										{
+											"key": "fecha",
+											"value": "<dateTime>"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
