@@ -4,11 +4,6 @@ using Domain.Entity;
 using Domain.Enums;
 using MediatR;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Features.MovimientoFeatures.Commands.CreateMovimiento
 {
@@ -40,30 +35,38 @@ namespace Application.Features.MovimientoFeatures.Commands.CreateMovimiento
 
             public async Task<string> Handle(CreateMovimientoCommand command, CancellationToken cancellationToken)
             {
-                var cuenta = await _cuentaRepository.GetAsync(command.CuentaId);
-
-                if(cuenta != null)
+                if (command.Valor != 0)
                 {
-                    if (command.TipoMovimiento == TipoMovimientos.Debito)
+                    if ((command.TipoMovimiento == TipoMovimientos.Credito && command.Valor < 0) || (command.TipoMovimiento == TipoMovimientos.Debito && command.Valor > 0))
+                        return $"Valor {command.Valor} inválido para tipo de movimiento {(command.TipoMovimiento == TipoMovimientos.Debito ? "Débito" : "Crédito")}";
+
+                    var cuenta = await _cuentaRepository.GetAsync(command.CuentaId);
+
+                    if (cuenta != null)
                     {
-                        if (await ValidateMontoMax(command.CuentaId, long.Parse(command.Fecha.ToString("yyyyMMdd")), command.Valor))
-                            return "Cupo diario Excedido";
+                        if (command.TipoMovimiento == TipoMovimientos.Debito)
+                        {
+                            if (await ValidateMontoMax(command.CuentaId, long.Parse(command.Fecha.ToString("yyyyMMdd")), command.Valor))
+                                return "Cupo diario Excedido";
 
-                        if (cuenta.SaldoInicial == 0)
-                            return "Saldo no disponible";
+                            if (cuenta.SaldoInicial == 0)
+                                return "Saldo no disponible";
+                        }
+
+                        decimal saldo = cuenta.SaldoInicial + command.Valor;
+
+                        var movimiento = _mapper.Map<Movimiento>(command);
+                        movimiento.Saldo = saldo;
+
+                        await _movimientoRepository.AddAsync(movimiento);
+
+                        return "Ok";
                     }
-
-                    decimal saldo = cuenta.SaldoInicial + command.Valor;
-
-                    var movimiento = _mapper.Map<Movimiento>(command);
-                    movimiento.Saldo = saldo;
-
-                    await _movimientoRepository.AddAsync(movimiento);
-
-                    return "Ok";
+                    else
+                        return "Cuenta Inválida";
                 }
                 else
-                    return "Cuenta Inválida";
+                    return "Valor de movimiento inválido";
             }
 
             private async Task<bool> ValidateMontoMax(long cuentaId, long fecha, decimal valor)
@@ -77,6 +80,5 @@ namespace Application.Features.MovimientoFeatures.Commands.CreateMovimiento
                 return ((-(debitoDia + valor)) > (montoMaximo));
             }
         }
-    
     }
 }

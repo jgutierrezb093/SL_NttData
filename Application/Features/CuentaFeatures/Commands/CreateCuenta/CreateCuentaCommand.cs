@@ -2,8 +2,6 @@
 using Domain.Entity;
 using Domain.Enums;
 using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Application.Features.CuentaFeatures.Commands.CreateCuenta
 {
