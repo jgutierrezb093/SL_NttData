@@ -45,6 +45,8 @@ namespace Infrastructure.Context
                     .WithMany(p => p.Movimientos)
                     .HasForeignKey(d => d.CuentaId);
             });
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

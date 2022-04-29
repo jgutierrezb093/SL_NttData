@@ -12,10 +12,7 @@ namespace Infrastructure
         public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<NttDataDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ConnectionString"),
-                    b => b.MigrationsAssembly(typeof(NttDataDbContext).Assembly.FullName)));
-
-            services.AddScoped<NttDataDbContext>(provider => provider.GetService<NttDataDbContext>());
+                options.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
         }
 
         public static void AddRepositories(this IServiceCollection services)
