@@ -12,7 +12,7 @@ namespace Infrastructure
         public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<NttDataDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
+                options.UseOracle(configuration.GetConnectionString("ConnectionString")));
         }
 
         public static void AddRepositories(this IServiceCollection services)
