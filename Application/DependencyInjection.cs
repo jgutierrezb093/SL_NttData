@@ -1,7 +1,5 @@
 ﻿using Application.Features.ClienteFeatures.Commands.CreateCliente;
 using Application.Features.ClienteFeatures.Commands.UpdateCliente;
-using Application.Features.CuentaFeatures.Commands.CreateCuenta;
-using Application.Features.CuentaFeatures.Commands.UpdateCuenta;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
@@ -21,9 +19,6 @@ namespace Application
 
             services.AddTransient<IValidator<CreateClienteCommand>, CreateClienteCommandValidator>();
             services.AddTransient<IValidator<UpdateClienteCommand>, UpdateClienteCommandValidator>();
-
-            services.AddTransient<IValidator<CreateCuentaCommand>, CreateCuentaCommandValidator>();
-            services.AddTransient<IValidator<UpdateCuentaCommand>, UpdateCuentaCommandValidator>();
 
             services.AddMediatR(Assembly.GetExecutingAssembly());
         }

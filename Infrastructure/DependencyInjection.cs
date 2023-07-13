@@ -19,8 +19,6 @@ namespace Infrastructure
         {
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IClienteRepository, ClienteRepository>();
-            services.AddScoped<ICuentaRepository, CuentaRepository>();
-            services.AddScoped<IMovimientoRepository, MovimientoRepository>();
         }
     }
 }
